@@ -16,7 +16,7 @@
     "build:main": "tsc -d",
     "build:umd": "webpack --output-filename mobx-react-form.umd.js",
     "build:umdmin": "webpack --output-filename mobx-react-form.umd.min.js -p",
-    "prebuild": "npm run clean:build",
+    "prebuild": "npm install && npm run clean:build",
     "precommit": "npm run lint && npm run cover",
     "commit": "git-cz && git push origin",
     "watch:build": "tsc --watch -d",
